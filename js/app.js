@@ -20,3 +20,15 @@ function restar(){
     document.getElementById('resultadoResta').innerHTML = `Resultado Resta :${resutadoResta}`
 }
 
+function multiplicar(){
+    const formarMultiplicar = document.getElementById('forma');
+    let operandoA = forma['operandoA'];
+    let operandoB = forma['operandoB'];
+    let resultadoMultiplicar = parseInt( operandoA.value) *parseInt(operandoB.value)
+    if(isNaN(resultadoMultiplicar)){
+        resultadoMultiplicar = 'Verifique sus datos';
+    }
+    document.getElementById('multiplicacion').innerHTML = `Resultado : ${resultadoMultiplicar}`
+
+}
+
